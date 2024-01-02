@@ -7,11 +7,12 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - Bug fixes: any changes that fix issues or bug in the existing code
 - Dependencies: updates of dependency versions
 
-## [Unreleased] - yyyy-mm-dd
+## [Unreleased] - 2024-01-02
 
 ### Breaking changes
 
 ### New features & improvements
+- Adds `bodyDoesNotContain()` method to create assertions checking for non-existent values in body content
 
 ### Bug fixes
 
