@@ -66,13 +66,25 @@ class AssertionsBuilder {
     }
 
     /**
-     * Asserts that the response body contains the given value
-     * @param value Value to look for
+     * asserts that the response body contains the given value
+     * @param value value to look for
      */
     fun bodyContains(value: Any) {
         target(
             SyntheticsAssertionType.BODY,
             SyntheticsAssertionOperator.CONTAINS,
+            value
+        )
+    }
+
+    /**
+     * asserts that the response body does not contain the given value
+     * @param value value to look for
+     */
+    fun bodyDoesNotContain(value: Any) {
+        target(
+            SyntheticsAssertionType.BODY,
+            SyntheticsAssertionOperator.DOES_NOT_CONTAIN,
             value
         )
     }
